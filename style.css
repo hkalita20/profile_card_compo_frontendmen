@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card{
+    width: 100%;
+    height: 25.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+.contain{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./images/bg-pattern-top.svg"),url("./images/bg-pattern-bottom.svg");
+        background-position: -47% -500px, 147% 338px;
+        background-repeat: no-repeat;
+        background-color: hsl(185, 75%, 39%);
+}
+
+.back{
+    background: url("./images/bg-pattern-card.svg");
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+    
+.hero_image{
+    height: 96px;
+    width: 96px;
+    border:6px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translateY(5rem);
+}
+
+
+
+.light{
+    font-weight:lighter;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 59%);
+    margin-top: 0;
+    display: block;
+}
+
+.age{
+    display: inline;
+    font-size: 1.1rem;
+}
+
+
+.name{
+    margin-bottom: 5px;
+}
+
+.bottom{
+    padding-right: 40px;
+    border-top: 1px solid hsl(0, 10%, 88%);
+    padding-left: 40px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (max-width:370px){
+    .card{
+        width: 90%;
+    }
+
+    .bottom{
+        padding-left: 30px;
+    }
+}
+
+
+@media (max-width:228px){
+  .card{
+    height: fit-content;
+  }
+  .bottom{
+    display: block;
+  } 
+}
